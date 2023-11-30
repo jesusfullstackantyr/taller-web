@@ -1,0 +1,206 @@
+:root {
+  --main-color:#707070;
+  --white:#FFFF;
+  --black:#000000;
+  --grey:#F2F2F2;
+  --light-grey:#E3E3E3;
+}
+
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: var(--white);
+} 
+
+section {
+  margin:45px 0;
+  padding:20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.form {
+  background-color: var(--grey);
+  border-radius: 20px;
+  padding: 20px;
+}
+.form-group {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10;
+  padding: 20px;
+  margin: 10px;
+}
+
+.form-group label {
+  margin-right: 20px;
+  grid-column: span 1;
+}
+
+.form-group .form-control {
+  grid-column: span 2;
+  width: 275px;
+  padding: 10px;
+  font-size: 16px;
+  color:#BFBFBF;
+  font-weight:300;
+}
+.form-control {
+  background-color: var(--white);
+  border:1px solid var(--light-grey);
+  border-radius: 10px;
+  height: 40px;
+}
+
+.brand{
+  text-decoration: none;
+  font:normal normal 900 32px/39px Lato;
+  opacity: 1;
+  letter-spacing: 1;
+}
+
+.main-button {
+  color:var(--white);
+  background-color: var(--black);
+  border: 1px solid var(--main-color);
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 16px;
+  padding:12px 40px;
+  text-decoration: none;
+}
+
+.main-button:hover {
+  cursor: pointer;
+}
+
+.section-title {
+  color:var(--main-color);
+  font-size: 24px;
+  text-align: left;
+  margin:5px 0;
+}
+
+.section-paragraph {
+  color:var(--main-color);
+  font-size: 18px;
+  font-weight:lighter;
+}
+
+.videogame-chips {
+  background-color: var(--white);
+  border-radius: 12px;
+  color:var(--main-color);
+  padding:10px;
+  margin: 0px 5px;
+}
+
+.videogames-list {
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  gap:10px;
+
+  margin:30px 0px;
+}
+
+.card-videogame {
+  border:1px solid var(--light-grey);
+  border-radius: 20px;
+  padding: 20px;
+  grid-column: span 2;
+
+  margin:0px 0px 25px 0px;
+}
+
+.card-videogame .card-videogame-image {
+  width: 100%;
+  background-color: var(--grey);
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.card-videogame .card-videogame-image  img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.card-videogame .card-videogame-title .videogames-title {
+  color:var(--black);
+  font-size: 18px;
+
+}
+
+.wrapper {
+  max-width: 80%;
+  margin: auto;
+}
+
+.brand {
+  color:var(--main-color);
+  font-size: 32px;
+}
+/*===============HEADER============*/
+#header .main-content {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+#header .main-navigation .nav-link {
+  color:var(--black);
+  text-decoration: none;
+  font:normal normal medium;
+  opacity: 1;
+  font-size: 18px;
+  text-align: center;
+  text-transform: capitalize;
+  margin:0px 22px;
+}
+
+/*===============MAIN-BANNER============*/
+.main-banner {
+  padding:20px;
+}
+
+.main-banner .main-content {
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  gap:10px
+}
+.promotion-description-game {
+  grid-column: span 4;
+}
+.promotion-image-game {
+  grid-column: span 4;
+}
+.promotion-description-game .promotion-title {
+  color:var(--main-color);
+  font-size: 40px;
+  font:normal normal 900;
+  text-align: left;
+  margin:24px 0;
+}
+
+.promotion-description-game .promotion-paragraph {
+  color:var(--main-color);
+  text-align: left;
+  font-size: 20px;
+  font:normal normal normal;
+  margin:35px 0;
+}
+
+.promotion-image-game .main-image {
+  background-color: var(--grey);
+  border-radius: 20px;
+  padding: 20px;
+  height: 100%;
+}
+
